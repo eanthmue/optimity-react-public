@@ -1,21 +1,18 @@
 import { useParams, NavLink } from 'react-router-dom';
-import useFetch from '../composables/useFetch';
+import dbData from "../data/db.json";
 import imageDI from "./../assets/images/Design and Implementation.png"
-import { backendBaseUrl } from '../config/appConfig';
 
 const ServiceDetails = () => {
 
     const imageDesign = imageDI;
     const { id } = useParams();
-    const { data: service, isPending, error } = useFetch(`${backendBaseUrl}/services/` + id);
+    const service = dbData.services.find(s => s.id === id);
 
     return ( <>
 
     <section>
-    {error && <div>{error}</div>}
-
-    {isPending || !service ? (
-    <div>Loading...</div>
+    {!service ? (
+    <div>Service not found</div>
     ) : (<>
 
     <div className="p-6 md:p-10 bgcoralwhitepink">

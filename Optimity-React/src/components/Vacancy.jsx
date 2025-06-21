@@ -1,20 +1,11 @@
-
-import useFetch from "../composables/useFetch";
-import { backendBaseUrl } from "../config/appConfig";
+import dbData from "../data/db.json";
 
 const Vacancy = () => {
-    const {
-        data: vacancy,
-        isPending,
-        error,
-    } = useFetch(`${backendBaseUrl}/vacancy`);
+    const vacancy = dbData.vacancy;
 
     return ( <>
     
         <section className="bgcoralwhitepink max-w-4xl ">
-        {error && <div>{error}</div>}
-
-        {isPending || !vacancy ?<div>Loading...</div> : 
         <div>
             <h1 className="!font-extralight !text-slate-600">
                 Vacancy Announcement!
@@ -34,7 +25,6 @@ const Vacancy = () => {
                 ))}
             </div>
         </div>
-        }
             
         </section>
     </> );

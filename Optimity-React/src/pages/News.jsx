@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import useFetch from "../composables/useFetch";
+import dbData from "../data/db.json";
 import newsImage from "./../assets/images/News.png";
 
 import Services from '../components/Services';
@@ -9,18 +9,11 @@ import PartnerLogos from "../components/PartnerLogos";
 const News = () => {
 
     const image1= newsImage;
-
-    const {
-        data: news,
-        isPending,
-        error,
-    } = useFetch("http://optimityback.htoomaungthait.xyz/news");
+    const news = dbData.news;
 
     return ( <>
     <section className="text-white">
         <h1>News</h1>
-        {error && <div>{error}</div>}
-        {isPending || !news ? <div>Loading...</div> : 
         <div>
             {news.map((data) => (
                 <div key={data.id} className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -34,7 +27,7 @@ const News = () => {
                     </div>
                 </div>
             ))}
-        </div>}
+        </div>
 
         <Services/>
 
