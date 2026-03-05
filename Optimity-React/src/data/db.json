@@ -60,7 +60,7 @@
       "Technical Support and Helpdesk Services",
       "24/7 technical support",
       "Consultation and Advisory Services"],
-    "imageUrl" : "../../assets/images/telecoisp.jpg"
+    "imageUrl" : "../src/assets/images/telecoisp.jpg"
   },
   {
     "id":"2",
