@@ -60,7 +60,7 @@
       "Technical Support and Helpdesk Services",
       "24/7 technical support",
       "Consultation and Advisory Services"],
-    "imageUrl" : "ispImage"
+    "imageUrl" : "telecoisp"
   },
   {
     "id":"2",
@@ -71,7 +71,7 @@
     "Technical Support",
     "Consultation and Advisory Services"
   ],
-    "imageUrl" : "ispImage"
+    "imageUrl" : "datacenter"
   },
   {
     "id":"3",
@@ -81,7 +81,7 @@
     "Performance Monitoring and Optimization",
     "Technical support",
     "Consultation and Advisory Services"],
-    "imageUrl" : "ispImage"
+    "imageUrl" : "hyperconverged"
   },
   {
     "id":"4",
@@ -91,7 +91,7 @@
     "End-Point Security Solutions",
     "Security Testing Services",
     "Consultation and Advisory Services"],
-    "imageUrl" : "ispImage"
+    "imageUrl" : "securitysolutions"
   },
   {
     "id":"5",
@@ -100,7 +100,7 @@
     "servicesupport" : ["Software Licensing and Integration",
     "Support and Maintenance Services",
     "Consultation and Advisory Services"],
-    "imageUrl" : "ispImage"
+    "imageUrl" : "endusercom"
   },
   {
     "id":"6",
@@ -109,7 +109,7 @@
     "servicesupport" : ["IT Infrastructure Optimization",
     "Cloud Solutions",
     "Consultation and Advisory Services"],
-    "imageUrl" : "ispImage"
+    "imageUrl" : "manageditcloud"
   },
   {
     "id":"7",
@@ -119,7 +119,19 @@
     "Troubleshooting and Technical Support",
     "Equipment Procurement and Setup",
     "Equipment Upgrades and Expansion"],
-    "imageUrl" : "ispImage"
+    "imageUrl" : "enterprisenetwork"
+  },
+  {
+    "id": "8",
+    "title": "Cisco Managed Services",
+    "description": "Unlock the full potential of your Cisco investment with our expert Managed Services. We provide a comprehensive management layer over your Cisco architecture, ensuring high availability and peak performance across your entire network. By leveraging Cisco’s industry-leading technology, we offer proactive monitoring and automated remediation that minimizes downtime and frees your internal teams to focus on core business innovation. \n\n Our Cisco Managed Services optimize your infrastructure through: \n\n - Proactive Network Monitoring: Real-time visibility and threat detection. \n\n - Lifecycle Management: End-to-end support from deployment to hardware refresh. \n\n - SD-WAN & Meraki Management: Simplified, cloud-based control of your distributed network. \n\n - Unified Communications: Seamless management of your collaboration and VOIP tools. \n\n Our certified experts ensure that your Cisco environment is always secure, updated, and aligned with your organizational goals.",
+    "servicesupport": [
+      "24/7 Proactive Monitoring and Incident Management",
+      "Cisco Certified Technical Support (CCNA/CCNP)",
+      "Network Performance Reporting and Analytics",
+      "Strategic Consultation and Roadmap Planning"
+    ],
+    "imageUrl": "cmservices"
   }
 
 ],
