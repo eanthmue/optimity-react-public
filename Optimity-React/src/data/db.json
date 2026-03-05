@@ -60,7 +60,7 @@
       "Technical Support and Helpdesk Services",
       "24/7 technical support",
       "Consultation and Advisory Services"],
-    "imageUrl" : "../src/assets/images/telecoisp.jpg"
+    "imageUrl" : "telecoisp"
   },
   {
     "id":"2",
@@ -71,7 +71,7 @@
     "Technical Support",
     "Consultation and Advisory Services"
   ],
-    "imageUrl" : "../../assets/images/datacenter.jpg"
+    "imageUrl" : "datacenter"
   },
   {
     "id":"3",
@@ -81,7 +81,7 @@
     "Performance Monitoring and Optimization",
     "Technical support",
     "Consultation and Advisory Services"],
-    "imageUrl" : "../../assets/images/hyperconverged.jpg"
+    "imageUrl" : "hyperconverged"
   },
   {
     "id":"4",
@@ -91,7 +91,7 @@
     "End-Point Security Solutions",
     "Security Testing Services",
     "Consultation and Advisory Services"],
-    "imageUrl" : "../../assets/images/securitysolutions.jpg"
+    "imageUrl" : "securitysolutions"
   },
   {
     "id":"5",
@@ -100,7 +100,7 @@
     "servicesupport" : ["Software Licensing and Integration",
     "Support and Maintenance Services",
     "Consultation and Advisory Services"],
-    "imageUrl" : "../../assets/images/endusercom.jpg"
+    "imageUrl" : "endusercom"
   },
   {
     "id":"6",
@@ -109,7 +109,7 @@
     "servicesupport" : ["IT Infrastructure Optimization",
     "Cloud Solutions",
     "Consultation and Advisory Services"],
-    "imageUrl" : "../../assets/images/manageditcloud.jpg"
+    "imageUrl" : "manageditcloud"
   },
   {
     "id":"7",
@@ -119,7 +119,7 @@
     "Troubleshooting and Technical Support",
     "Equipment Procurement and Setup",
     "Equipment Upgrades and Expansion"],
-    "imageUrl" : "../../assets/images/enterprisenetwork.jpg"
+    "imageUrl" : "enterprisenetwork"
   },
   {
     "id": "8",
@@ -131,7 +131,7 @@
       "Network Performance Reporting and Analytics",
       "Strategic Consultation and Roadmap Planning"
     ],
-    "imageUrl": "../../assets/images/cmservices.jpg"
+    "imageUrl": "cmservices"
   }
 
 ],

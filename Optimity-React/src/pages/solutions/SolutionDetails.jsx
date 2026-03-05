@@ -1,10 +1,31 @@
 import { useParams, NavLink } from 'react-router-dom';
 import dbData from "../../data/db.json";
 import { Icon } from '@iconify/react';
+import telecoispImg from "../../assets/images/telecoisp.jpg";
+import datacenterImg from "../../assets/images/datacenter.jpg";
+import hyperconvergedImg from "../../assets/images/hyperconverged.jpg";
+import securitysolutionsImg from "../../assets/images/securitysolutions.jpg";
+import endusercomImg from "../../assets/images/endusercom.jpg";
+import manageditcloudImg from "../../assets/images/manageditcloud.jpg";
+import enterprisenetworkImg from "../../assets/images/enterprisenetwork.jpg";
+import cmservicesImg from "../../assets/images/cmservices.jpg";
 
 const SolutionDetails = () => {
     const { id } = useParams();
     const solution = dbData.solutions.find(s => s.id === id);
+
+    const imageMap = {
+        telecoisp: telecoispImg,
+        datacenter: datacenterImg,
+        hyperconverged: hyperconvergedImg,
+        securitysolutions: securitysolutionsImg,
+        endusercom: endusercomImg,
+        manageditcloud: manageditcloudImg,
+        enterprisenetwork: enterprisenetworkImg,
+        cmservices: cmservicesImg,
+    };
+
+    const imageSrc = imageMap[solution?.imageUrl];
 
     return (
         <section>
@@ -16,7 +37,7 @@ const SolutionDetails = () => {
                 <div className="p-6 md:p-10 bgcoralwhitepink">
                     <div className=' grid grid-cols-1 md:grid-cols-2 gap-6'>
                         <div className="pt-6">
-                            <img className="rounded-xl shadow-lg" src={solution.imageUrl} alt="" />
+                            <img className="rounded-xl shadow-lg" src={imageSrc} alt="" />
                         </div>
 
                         <div className="pt-6">
