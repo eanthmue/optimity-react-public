@@ -1,10 +1,8 @@
 import { useParams, NavLink } from 'react-router-dom';
 import dbData from "../../data/db.json";
 import { Icon } from '@iconify/react';
-import imageISP from "../../assets/images/ISP.jpg";
 
 const SolutionDetails = () => {
-    const image1 = imageISP;
     const { id } = useParams();
     const solution = dbData.solutions.find(s => s.id === id);
 
@@ -18,7 +16,7 @@ const SolutionDetails = () => {
                 <div className="p-6 md:p-10 bgcoralwhitepink">
                     <div className=' grid grid-cols-1 md:grid-cols-2 gap-6'>
                         <div className="pt-6">
-                            <img className="rounded-xl shadow-lg" src={image1} alt="" />
+                            <img className="rounded-xl shadow-lg" src={solution.imageUrl} alt="" />
                         </div>
 
                         <div className="pt-6">
