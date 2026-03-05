@@ -1,11 +1,28 @@
 import { NavLink } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import dbData from "../../data/db.json";
-import imageISP from "../../assets/images/ISP.jpg";
+import telecoispImg from "../../assets/images/telecoisp.jpg";
+import datacenterImg from "../../assets/images/datacenter.jpg";
+import hyperconvergedImg from "../../assets/images/hyperconverged.jpg";
+import securitysolutionsImg from "../../assets/images/securitysolutions.jpg";
+import endusercomImg from "../../assets/images/endusercom.jpg";
+import manageditcloudImg from "../../assets/images/manageditcloud.jpg";
+import enterprisenetworkImg from "../../assets/images/enterprisenetwork.jpg";
+import cmservicesImg from "../../assets/images/cmservices.jpg";
 
 const Solutions = () => {
-    const image1 = imageISP;
     const solutions = dbData.solutions;
+
+    const imageMap = {
+        telecoisp: telecoispImg,
+        datacenter: datacenterImg,
+        hyperconverged: hyperconvergedImg,
+        securitysolutions: securitysolutionsImg,
+        endusercom: endusercomImg,
+        manageditcloud: manageditcloudImg,
+        enterprisenetwork: enterprisenetworkImg,
+        cmservices: cmservicesImg,
+    };
 
     return (
         <>
@@ -14,7 +31,7 @@ const Solutions = () => {
                 <div className="bgcoralwhitepink p-6 mt-6 text-center" key={solution.id}>
                     <div className="">
                         <h4 className="mb-4">{solution.title}</h4>
-                        <img className="rounded-xl shadow-lg" src={image1} alt="" />
+                        <img className="rounded-xl shadow-lg" src={imageMap[solution.imageUrl]} alt="" />
                     </div>
                     <div className="mt-6">
                         <h4 className="underline mb-4">Service Support</h4>
